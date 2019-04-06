@@ -9,18 +9,18 @@ programa
 
 		enquanto(ano!=0)     //* Ele verifica os anos até que o ano seja diferente de 0
 		{
-      se (ano>0)         //* Verifica se o ano é maior que 0, pois não existe ano negativo
-      {
-      se(ano%400 == 0 e ano%4 == 0)	/* Verifica se o valor do ano é múltiplo 400 e por 4
-        escreva(ano," é bissexto\n")
-      senao se(ano%4 == 0 e ano%100!=0)   //* Verifica se o valor do ano é múltiplo de 4, desde que não seja múltiplo de 100
-         escreva(ano," é bissexto\n")
-      senao  //* Se não estiver disposto nas duas hipóteses anteriores ele não é bissexto
-        escreva(ano," não é bissexto\n")
-      }
-      senao
-        escreva(ano," não é um ano válido\n")
-      leia(ano)
+		      se (ano>0)         //* Verifica se o ano é maior que 0, pois não existe ano negativo
+		      {
+			      se(ano%400 == 0 e ano%4 == 0)	/* Verifica se o valor do ano é múltiplo 400 e por 4
+				escreva(ano," é bissexto\n")
+			      senao se(ano%4 == 0 e ano%100!=0)   //* Verifica se o valor do ano é múltiplo de 4, desde que não seja múltiplo de 100
+				escreva(ano," é bissexto\n")
+			      senao  //* Se não estiver disposto nas duas hipóteses anteriores ele não é bissexto
+				escreva(ano," não é bissexto\n")
+		      }
+		      senao
+			escreva(ano," não é um ano válido\n")
+		      leia(ano)
 		}
 	}
 }

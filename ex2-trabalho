@@ -1,0 +1,28 @@
+//  Autor: Diego Dalla
+//  Execução: Calcula um número fatorial n!
+//  Data: 06/04/2019
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n,i, valorinicial                        // Declara uma variável pro valor fatorial(n), uma variavel de controle(i) e uma variável que guarda o valor inicial do número fatorial para exibir na tela o resultado (valorinicial)
+		leia(n)	                                         // Lê o numero fatorial
+		valorinicial = n	                               // Salva o valor inicial da variável
+			enquanto(n>=0)	                               // Faz as operações até que n seja um negativo
+			{
+				para(i=n-1; i>1; i--)	                       // O número perde 1 a cada execução para seguir o formato de um fatorial (3! = 3*2*1), a variável de controle foi atribuído o valor n-1 pois o fatorial se mutiplica em forma decrescente, mas o número fatorial não se repete
+				{	
+						n=(n*i) 	                               // Calcula o valor fatorial do número atribuído a n
+				}
+				se(n==0)	                                   // Acrescenta uma exceção, caso n seja igual a 0, se calcula 0! = 1/1 segundo a regra fatorial
+					escreva(valorinicial, "! = ",1/1,"\n")
+				senao	                                      // Caso seja diferente de 0, o valor é exibido normalmente
+					escreva(valorinicial,"! = ",n,"\n")
+					leia(n)
+					valorinicial = n
+			}
+
+	}
+}

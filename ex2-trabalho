@@ -15,7 +15,7 @@ programa
 			{
 				para(i=n-1; i>1; i--)	                       // O número perde 1 a cada execução para seguir o formato de um fatorial (3! = 3*2*1), a variável de controle foi atribuído o valor n-1 pois o fatorial se mutiplica em forma decrescente, mas o número fatorial não se repete
 				{	
-						n=(n*i) 	                               // Calcula o valor fatorial do número atribuído a n
+					n=(n*i) 	                               // Calcula o valor fatorial do número atribuído a n
 				}
 				se(n==0)	                                   // Acrescenta uma exceção, caso n seja igual a 0, se calcula 0! = 1/1 segundo a regra fatorial
 					escreva(valorinicial, "! = ",1/1,"\n")
